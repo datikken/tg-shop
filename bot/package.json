@@ -1,0 +1,20 @@
+{
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup src/index.ts --watch --onSuccess 'node dist/index.js'"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3"
+  }
+}
